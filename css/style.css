@@ -1,0 +1,159 @@
+@import url(./fonts.css);
+@import url(./variables.css);
+@import url(./mediaQuery.css);
+
+/* 1ª Observação: Grid, Flexbox ou Flex, é uma série de comando para Responsividade no CSS, pois ajusta o Layout da página. */
+/* 2ª Observação: padding: Margem Interna - margem: Margem Externa - border: Linha de Divisão. */
+/* 3ª Observação: 1rem == 16 pixels. */
+
+/* Formatação CSS realizada por TAGs. */
+body{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    /* background-color: var(--cor-laranja-vermelho); */
+    font-family: var(--font-alerta);
+}
+
+form{
+    background-color: var(--cor-cinza-light);
+    border-radius: 8px;
+    text-align: left;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-family: var(--font-texto);
+    font-size: 1.4rem;
+}
+
+/* Formatação CSS realizada por IDs (#). */
+#topo{
+    background-color: var(--cor-cinza-medio);
+    color: var(--cor-branco);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 26px 14px;
+}
+
+#container{
+    text-align: center;
+    font-family: var(--font-titulo);
+}
+
+#end{
+    background-color: var(--cor-cinza-dark);
+    color: var(--cor-branco);
+}
+
+/* Formatação CSS realizada por Class (.). */
+.topo{
+    font-size: 26px;
+    font-family: var(--font-titulo);
+    padding-right: 24px;
+    display: flex;
+    justify-content: end;
+}
+
+.imgLogotipo{
+    width: 220px;
+}
+
+.layoutMenu{
+    text-align: right;
+}
+
+.itemMenu{
+    list-style: none;
+}
+
+.linkMenu{
+    text-decoration: none;
+    color: var(--cor-branco);
+}
+
+.linkMenu:hover{
+    color: var(--cor-laranja-vermelho);
+}
+
+.imgUser{
+    width: 320px;
+    border-radius: 50%;
+}
+
+.boxForm{
+    margin: 3rem;
+}
+
+.formLogion{
+    height: 685px;
+    margin-bottom: 2rem;
+}
+
+.formLogion, .formCadastro{
+    padding-top: 1.8rem;
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--cor-cinza-light);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.campLogin, .campCadastro{
+    width: 100%;
+    height: 35px;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    outline: none;
+    border: none;
+    border-radius: 2.6px;
+}
+
+.btnLogin{
+    width: 145px;
+    height: 42px;
+    font-size: 18.5px;
+    outline: none;
+    border: none;
+    border-radius: 2.6px;
+    background-color: var(--cor-azul);
+    color: var(--cor-branco);
+    cursor: pointer;
+}
+
+.btnLogin:hover{
+    background-color: var(--cor-azul-dark);
+}
+
+.btnCadastrar{
+    width: 145px;
+    height: 42px;
+    font-size: 18.5px;
+    outline: none;
+    border: none;
+    border-radius: 2.6px;
+    background-color: var(--cor-verde);
+    color: var(--cor-branco);
+    cursor: pointer;
+}
+
+.btnCadastrar:hover{
+    background-color: var(--cor-verde-dark);
+}
+
+.end{
+    padding: 3.4rem 0rem;
+    text-align: center;
+    font-family: var(--font-texto);
+    font-size: 18px;
+}
+
+.imgLogotipoEnd{
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+}

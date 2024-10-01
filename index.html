@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/logotipo_branco.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Projeto Web Front-End</title>
+</head>
+<body>
+    <!-- TAG header: Inicia a estrutura do conteúdo da página Web. -->
+    <header id="topo">
+        <img src="images/logotipo_transparente.png" alt="Logotipo" title="Logotipo" class="imgLogotipo">
+
+        <section class="topo">
+            <ul class="layoutMenu">
+                <li class="itemMenu">
+                    <a href="https://www.facebook.com.br" target="_blank" class="linkMenu">Facebook</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="https://www.instagram.com.br" target="_blank" class="linkMenu">Instagram</a>
+                </li>
+                <li class="itemMenu">
+                    <a href="https://www.youtube.com.br" target="_blank" class="linkMenu">Youtube</a>
+                </li>
+            </ul>
+        </section>
+    </header>
+
+    <!-- TAG main: Centraliza todo o conteúdo principal da página web. -->
+    <main id="container">
+        <h1>Formulário de Login: Faça seu acesso.</h1>
+        <h2>Caso não tenha uma Conta, realize seu Cadastro.</h2>
+
+        <!-- Método de Envio de Dados POST: Envio de dados de forma oculta via protocolo HTTP/HTTPS.-->
+        <!-- Método de Envio de Dados GET: Envia os dados de forma aberta e visivel, para a URL do seu Navegador. -->
+        <!-- Caso o Formulário não recebe a especificação do Método de Envio, nativamente ele sera GET. -->
+
+        <section class="boxForm">
+            <div class="formLogion">
+                <img src="images/user.jpg" alt="Imagem do Usuário!" title="Imagem do Usuário!" class="imgUser">
+
+                <!-- Formulário de Login. -->
+                <form action="index.html" method="GET" name="formLogin" onsubmit="return ValidarCamposLogin();">
+                    <label>Digite seu E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite aqui..." class="campLogin">
+                    <label>Digite sua Senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite aqui..." class="campLogin">
+                    <button name="btnLogin" class="btnLogin">Acessar</button>
+                </form>
+            </div>
+
+            <div class="formCadastro">
+                <!-- Formulário de Cadastro. -->
+                <form action="index.html" method="GET" name="formCadastro" onsubmit="return ValidarCamposCadastro();">
+                    <label>Digite seu Nome Completo:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite aqui..." class="campCadastro">
+                    <label>Digite seu E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Digite aqui..." class="campCadastro">
+                    <label>Selecione sua Data de Nascimento:</label>
+                    <input type="date" name="data" id="data" class="campCadastro">
+                    <label>Digite seu CPF:</label>
+                    <input type="number" name="cpf" id="cpf" placeholder="Digite aqui..." class="campCadastro">
+                    <label>Digite seu Bairro:</label>
+                    <input type="text" name="bairro" id="bairro" placeholder="Digite aqui..." class="campCadastro">
+                    <label>Digite o Nome da sua Rua:</label>
+                    <input type="text" name="rua" id="rua" placeholder="Digite aqui..." class="campCadastro">
+                    <label>Digite o Número do Local:</label>
+                    <input type="number" name="local" id="numero" placeholder="Digite aqui..." class="campCadastro">
+                    <label>Digite o CEP:</label>
+                    <input type="number" name="cep" id="cep" placeholder="Digite aqui..." class="campCadastro">
+                    <label>Digite um Complemento:</label>
+                    <input type="text" name="complemento" id="complemento" placeholder="Digite aqui..." class="campCadastro">
+                    <label>Digite uma Senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="Digite aqui..." class="campCadastro">
+                    <label>Digite novamente sua Senha:</label>
+                    <input type="password" name="repSenha" id="repSenha" placeholder="Digite aqui..." class="campCadastro">
+                    <button name="btnCadastrar" class="btnCadastrar">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- TAG footer: Encerramento de conteúdo da página web. -->
+    <footer id="end">
+        <section class="end">
+            <p>Copyright © 2024 - Todos os direitos reservados.</p>
+
+            <img src="images/logotipo_branco.png" alt="Logotipo" title="Logotipo" class="imgLogotipoEnd">
+        </section>
+    </footer>
+
+    <!-- Chamada do Arquivo Javascript. -->
+    <script src="js/validar_campos.js"></script>
+</body>
+</html>

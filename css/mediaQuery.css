@@ -1,0 +1,30 @@
+@import url(./variables.css);
+
+/* Arquivo com Funções Nativas de Ajustes de Tela (Responsividade). */
+/* Resolução de 320px até 568px: Medida de Tela para celulares com baixa resolução. */
+/* Resolução de 568px até 768px: Medida de Tela para celulares com alta resolução. */
+/* Resolução de 768px até 992px ou 998px: Medida de Tela para Tablets. */
+/* Resolução superior 992px ou 998px: Medida de Tela para Notebook e Desktop. */
+
+/* Essa função é responsavel pelo ajuste de Tela nos dispositivos Tablet, Notebook e Desktop! */
+@media screen and (min-width: 768px) {
+    .boxForm{
+        margin: 3rem;
+        gap: 1.2rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
+
+    .layoutMenu{
+        display: flex;
+        gap: 22px;
+    }
+
+    .end{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-items: center;
+    }
+}
